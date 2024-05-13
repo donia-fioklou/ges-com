@@ -82,7 +82,7 @@ WSGI_APPLICATION = 'project.wsgi.application'
     }
 }"""
 
-DATABASES = {
+"""DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'gescom',
@@ -91,7 +91,22 @@ DATABASES = {
         'HOST': 'localhost',  
         'PORT': '5432',        
     }
+}"""
+
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'FDonia3$gescom',
+        'USER': 'FDonia3',
+        'PASSWORD': '',
+        'HOST': 'FDonia3.mysql.pythonanywhere-services.com',
+        'PORT': '3306',
+        'OPTIONS': {
+            'charset': 'utf8mb4',
+        },
+    }
 }
+
 
 
 # Password validation
