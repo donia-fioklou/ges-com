@@ -6,5 +6,9 @@ class Purchase(models.Model):
     total_amount = models.DecimalField(max_digits=10, decimal_places=2)
     purchase_date = models.DateField()
 
+    class Meta:
+        verbose_name = "Achat"
+        verbose_name_plural = "Achats"
+
     def __str__(self):
         return f"{self.product.name} - {self.purchase_date}"

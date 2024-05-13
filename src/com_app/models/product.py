@@ -4,5 +4,9 @@ class Product(models.Model):
     description = models.TextField()
     price = models.DecimalField(max_digits=10, decimal_places=2)
 
+    class Meta:
+        verbose_name = "Produit"
+        verbose_name_plural = "Produits"
+
     def __str__(self):
         return self.name
